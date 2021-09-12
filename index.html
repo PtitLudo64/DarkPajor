@@ -2,34 +2,70 @@
 <html lang="fr">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-391ZBE7M7L"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-391ZBE7M7L');
+    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description"
+        content="Ludovic PAJOR, Web Designer, formateur et developpeur Web Frontend. Evreux, Normandie.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ludovic PAJOR - WebDesigner</title>
     <style>
+        hr {
+            background-color: #FDC360;
+            border: none;
+            height: 2px;
+        }
         body {
-            text-align: center;
+            height: 100vh;
+            margin: 0;
             padding: 150px;
+            box-sizing: border-box;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font: 30px Helvetica, sans-serif;
+            color: #eee;
+            background-color: #333;
         }
         h1 {
-            font-size: 60px;
+        font-size: 60px;
+        color: #FDC360;
+        text-align: center;
         }
-        body {
-            font: 30px Helvetica, sans-serif;
-            color: #333;
+        h2 {
+            font-size: 50px;
         }
         article {
             display: block;
             text-align: left;
             width: 50%;
-            margin: 0 auto;
+            margin: auto auto;
+        }
+        #signature {
+            color: #FDC360;
         }
         @media screen and (max-width: 768px) {
             body {
                 padding: 10px;
+                font-size: 1.5rem;
             }
             h1 {
                 font-size: 45px;
+            }
+            h2 {
+                font-size: 40px;
             }
             article {
                 width: 80%;
@@ -40,12 +76,16 @@
 
 <body>
     <article>
-        <h1>I&rsquo;ll be back!</h1>
+        <img src="img/txtDarkPajor.svg" alt="Dark Pajor">
+        <img src="img/txtWebDesign.svg" alt="Web Design">
+        <hr>
+        <h1>Ludovic PAJOR</h1>
+        <h2>I&rsquo;ll be back!</h2>
         <div>
             <p>Désolé, mais je procède à quelques modifications du site.<br>
             Je vous réserve de belles surprises 💬🎉</p>
 		    See you soon !
-            <p>&mdash; Dark PAJOR ;-)</p>
+            <p id="signature">&mdash; Dark PAJOR ;-)</p>
         </div>
     </article>
 </body>
